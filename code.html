@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 रक्षाबंधन की हार्दिक शुभकामनाएं 💖</title>
+    <!-- सुंदर हिंदी फॉन्ट्स -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari&family=Prata&display=swap" rel="stylesheet">
+    <style>
+        /* --- एनिमेशन्स --- */
+        @keyframes animated-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes pop-in-up {
+            0% { opacity: 0; transform: translateY(30px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes pulse-light {
+            0% { box-shadow: 0 0 20px rgba(253, 121, 168, 0.5); }
+            50% { box-shadow: 0 0 35px rgba(253, 121, 168, 1); }
+            100% { box-shadow: 0 0 20px rgba(253, 121, 168, 0.5); }
+        }
+        @keyframes pulse-viral-text {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; transform: scale(1.02); }
+            100% { opacity: 0.8; }
+        }
+
+        /* --- बैकग्राउंड --- */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Lohit Devanagari', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffdde1 0%, #ff9a9e 100%);
+            position: relative;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        /* --- मुख्य ग्लास कार्ड --- */
+        .card {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            animation: pop-in-up 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+
+        /* --- टेक्स्ट स्टाइल्स --- */
+        .main-heading {
+            font-family: 'Prata', serif;
+            color: #d63031;
+            font-size: 2.5em;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0 0 10px 0;
+        }
+        .sender-name {
+            font-family: 'Lohit Devanagari', sans-serif;
+            color: #2d3436;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        .prompt-text {
+            font-size: 1.3em;
+            color: #e84393;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+        
+        /* --- तेजस्वी बॉर्डर और GIF --- */
+        .gif-wrapper {
+            padding: 7px;
+            margin: 20px auto;
+            border-radius: 18px;
+            background: linear-gradient(60deg, #fd79a8, #a29bfe, #fab1a0, #ff7675, #fd79a8);
+            background-size: 300% 300%;
+            animation: animated-gradient 5s ease-in-out infinite;
+        }
+        .gif-image {
+            max-width: 100%;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* --- इनपुट और बटन --- */
+        .name-input {
+            width: 90%;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #fd79a8;
+            color: #2d3436;
+            border-radius: 50px;
+            font-size: 1.1em;
+            text-align: center;
+            font-family: 'Lohit Devanagari', sans-serif;
+            transition: all 0.3s ease;
+        }
+        .name-input::placeholder { color: #636e72; }
+        .name-input:focus {
+            outline: none;
+            border-color: #e84393;
+            box-shadow: 0 0 15px rgba(232, 67, 147, 0.5);
+        }
+        
+        /* --- वायरल मैसेज स्टाइल --- */
+        .viral-text {
+            color: #c0392b;
+            font-size: 1em;
+            margin: 20px 10px;
+            animation: pulse-viral-text 3s infinite;
+        }
+        
+        .share-button {
+            margin-top: 15px;
+            background: linear-gradient(45deg, #e84393, #d63031);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.4em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: pulse-light 3s infinite;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .share-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- विज्ञापन कंटेनर की स्टाइल --- */
+        .ad-container {
+            position: relative;
+            z-index: 2;
+            margin-top: 25px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            max-width: 340px;
+            width: 95%;
+            text-align: center;
+        }
+        .ad-label {
+            font-size: 0.7em;
+            color: rgba(0, 0, 0, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <div id="greeting-area">
+            <h1 class="main-heading">Happy Raksha Bandhan</h1>
+        </div>
+
+        <div class="gif-wrapper">
+            <img src="rakshabandhan.gif" alt="Happy Raksha Bandhan Animation" class="gif-image">
+        </div>
+
+        <p class="prompt-text">💖 अपना नाम लिखें और राखी की शुभकामनाएं भेजें 💖</p>
+        <input type="text" id="userName" class="name-input" placeholder="आपका प्यारा नाम...">
+        
+        <p class="viral-text">✨ इस प्यारे संदेश को अपने 10 भाई/बहनों के साथ शेयर करें और इस रिश्ते को और भी मज़बूत बनाएं! ✨</p>
+        
+        <button onclick="shareWish()" class="share-button">
+            💖 राखी भेजें 💖
+        </button>
+
+    </div>
+
+    <!-- ===== विज्ञापन का सेक्शन ===== -->
+    <div class="ad-container">
+        <span class="ad-label">Advertisement</span>
+        <!-- यहाँ आपका विज्ञापन कोड है -->
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '071766d39648b366be55849a2a7e2ac0',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/071766d39648b366be55849a2a7e2ac0/invoke.js"></script>
+    </div>
+    <!-- ===== विज्ञापन का सेक्शन खत्म ===== -->
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const senderName = urlParams.get('from');
+            const greetingArea = document.getElementById('greeting-area');
+
+            if (senderName) {
+                const decodedName = decodeURIComponent(senderName.replace(/\+/g, ' '));
+                greetingArea.innerHTML = `
+                    <h1 class="main-heading">रक्षाबंधन की हार्दिक शुभकामनाएं!</h1>
+                    <p class="sender-name">💖 ${decodedName} की ओर से 💖</p>
+                `;
+            }
+        };
+
+        async function shareWish() {
+            const nameInput = document.getElementById('userName');
+            const yourName = nameInput.value.trim();
+
+            if (yourName === "") {
+                alert("कृपया अपना नाम ज़रूर लिखें!");
+                return;
+            }
+
+            const encodedName = encodeURIComponent(yourName);
+            const baseUrl = window.location.href.split('?')[0];
+            const shareUrl = `${baseUrl}?from=${encodedName}`;
+
+            const shareText = `*${yourName}* की तरफ से आपको और आपके परिवार को रक्षाबंधन के पावन पर्व की हार्दिक शुभकामनाएं। 🎀\n\nयह धागा सिर्फ एक डोरी नहीं, बल्कि मेरे प्यार और सुरक्षा का वादा है।\n\nआप भी अपनी शुभकामनाएं इस लिंक पर क्लिक करके भेजें 👇`;
+
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'रक्षाबंधन की शुभकामनाएं!',
+                        text: shareText,
+                        url: shareUrl,
+                    });
+                } catch (error) {
+                    console.error('Sharing failed:', error);
+                }
+            } else {
+                const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + '\n' + shareUrl)}`;
+                window.open(whatsappUrl, '_blank');
+            }
+        }
+    </script>
+
+</body>
+</html>
